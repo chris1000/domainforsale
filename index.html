@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="http://example.com/favicon.ico" />
+
+    <title>DOMAIN FOR SALE!</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            background: rgb(14, 30, 37);
+            color: white;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 75%;
+            max-width: 364px;
+            padding: 24px;
+            background: white;
+            color: rgb(14, 30, 37);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px 0 rgba(14, 30, 37, .16);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="card">
+            <div class="header">
+                <h2 class="text-center">
+                    <p id="domain"></p> is currently for sale!
+                </h2>
+            </div>
+            <div class="body">
+                <script>
+                    document.getElementById("domain").innerHTML = window.location.host;
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
